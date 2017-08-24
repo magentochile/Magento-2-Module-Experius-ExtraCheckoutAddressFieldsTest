@@ -62,6 +62,7 @@ class InstallData implements InstallDataInterface
             $setup->getTable('quote_address'),
             'digi_code',
             [
+                'comment' => 'My Digi Code', // by Magento Chile fix upgrade error: "Impossible to create a column without comment."
                 'type' => 'text',
                 'length' => 255
             ]
@@ -71,6 +72,7 @@ class InstallData implements InstallDataInterface
             $setup->getTable('sales_order_address'),
             'digi_code',
             [
+                'comment' => 'My Digi Code', // by Magento Chile fix upgrade error: "Impossible to create a column without comment."
                 'type' => 'text',
                 'length' => 255
             ]
